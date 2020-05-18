@@ -1,0 +1,15 @@
+// Authored and revised by YOC team, 2017-2018
+// License placeholder #1
+
+package core
+
+// Constants containing the genesis allocation of built-in genesis blocks.
+// Their content is an RLP-encoded list of (address, balance) tuples.
+// Use mkalloc.go to create/update them.
+
+// nolint: misspell
+const testnetAllocData = "\xf8D\xe1\x9406\x1aa\u007f\xd0\tx-W8Q\xc5\\\x97\xa9\f\x91%_\x8b\xf8'x\x96X&x\xac\x00\x00\x00\u1519\u03a7Q\x1f\x10<Te\xa8\x03\x18\xad%l:\x8c\x17\xcf^\x8b\xf8'x\x96X&x\xac\x00\x00\x00"
+const mainnetAllocData = "\xf8D\xe1\x9406\x1aa\u007f\xd0\tx-W8Q\xc5\\\x97\xa9\f\x91%_\x8b\xf8'x\x96X&x\xac\x00\x00\x00\u1519\u03a7Q\x1f\x10<Te\xa8\x03\x18\xad%l:\x8c\x17\xcf^\x8b\xf8'x\x96X&x\xac\x00\x00\x00" // YoC genesis.json
+const rinkebyAllocData = "\xf8D\xe1\x9406\x1aa\u007f\xd0\tx-W8Q\xc5\\\x97\xa9\f\x91%_\x8b\xf8'x\x96X&x\xac\x00\x00\x00\u1519\u03a7Q\x1f\x10<Te\xa8\x03\x18\xad%l:\x8c\x17\xcf^\x8b\xf8'x\x96X&x\xac\x00\x00\x00"
+
+
