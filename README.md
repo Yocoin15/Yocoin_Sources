@@ -15,12 +15,12 @@
 1. Create **genesis.json** file from **genesis.exaple.json** and add new account to **"alloc"** block
 
 
-2. Initialize private net
+2. Initialize genesis
 ```
     build/bin/yocoin --datadir "./datadir" init genesis.json
 ```
 
-3. Run new node with console mode
+3. Run new rpc node with console mode
 ```
     build/bin/yocoin --datadir "./datadir" --maxpeers 3 --port "30301" --rpc --rpccorsdomain "*" console
 ```
