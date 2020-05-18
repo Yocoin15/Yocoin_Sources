@@ -17,12 +17,12 @@
 
 2. Initialize private net
 ```
-    build/bin/yocoin init genesis.json
+    build/bin/yocoin --datadir "./datadir" init genesis.json
 ```
 
 3. Run new node with console mode
 ```
-    build/bin/yocoin --maxpeers 0 --networkid 13 --port "30301" --rpc --rpccorsdomain "*" console
+    build/bin/yocoin --datadir "./datadir" --maxpeers 3 --port "30301" --rpc --rpccorsdomain "*" console
 ```
 
 4. Chech mining base address
