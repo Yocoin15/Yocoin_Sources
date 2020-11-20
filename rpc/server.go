@@ -68,6 +68,12 @@ func (s *Server) RegisterName(name string, rcvr interface{}) error {
 		s.services = make(serviceRegistry)
 	}
 
+	if "eth" == name {
+		if err := s.RegisterName("yoc", rcvr); err != nil {
+			return err
+		}
+	}
+
 	svc := new(service)
 	svc.typ = reflect.TypeOf(rcvr)
 	rcvrVal := reflect.ValueOf(rcvr)
